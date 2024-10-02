@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Establece el conjunto de caracteres en UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página sea responsive -->
+    <link rel="stylesheet" href="styles.css"> <!-- Enlaza el archivo de estilos CSS -->
+    <title>Calculadora</title> <!-- Título de la página -->
+</head>
+<body>
+   <div class="all"> <!-- Contenedor principal de la calculadora -->
+      <div class="insert"> <!-- Contenedor de los campos de entrada de números -->
+        <input type="text" id="num1"> <!-- Campo de entrada para el primer número -->
+        <input type="text" id="num2"> <!-- Campo de entrada para el segundo número -->
+      </div>
+      <div class="show"> <!-- Contenedor para mostrar el resultado -->
+        <input type="text" id="display" disabled> <!-- Campo de texto que muestra el resultado, deshabilitado -->
+      </div>
+      <div class="op"> <!-- Contenedor de los botones de operaciones -->
+        <button onclick="suma()">+</button> <!-- Botón para la suma -->
+        <button onclick="resta()">-</button> <!-- Botón para la resta -->
+        <button onclick="multi()">*</button> <!-- Botón para la multiplicación -->
+        <button onclick="division()">/</button> <!-- Botón para la división -->
+        <button onclick="potencia()">^</button> <!-- Botón para la potencia -->
+        <button onclick="raiz()">√</button> <!-- Botón para la raíz cuadrada -->
+        <button onclick="ce()">CE</button> <!-- Botón para borrar los campos -->
+      </div>
+    <script src="scripts.js"></script> <!-- Enlace al archivo de scripts de JavaScript -->
+   </div>
+</body>
+</html>

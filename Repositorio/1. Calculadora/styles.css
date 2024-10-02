@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900'); /* Importa la fuente Poppins */
+
+body {
+    font-family: 'Poppins'; /* Aplica la fuente Poppins a todo el cuerpo */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    min-height: 100vh; /* Altura mínima de la pantalla completa */
+    background-color: #b7cd7f; /* Color de fondo verde suave */
+}
+
+.all {
+    width: 1400px; /* Ancho del contenedor principal */
+    padding: 50px; /* Espacio interior del contenedor */
+    background-color: #778c43; /* Color de fondo del contenedor */
+    border-radius: 25px; /* Bordes redondeados */
+    align-items: center; /* Centra el contenido del contenedor */
+}
+
+.insert {
+    display: flex; /* Usa flexbox para el diseño de los campos */
+    justify-content: space-between; /* Coloca los elementos con espacio entre ellos */
+    margin-bottom: 25px; /* Margen inferior */
+}
+
+#num1, #num2 {
+    width: 47%; /* Ancho del campo de entrada */
+    height: 30px; /* Altura del campo de entrada */
+    font-size: 20px; /* Tamaño del texto */
+    padding: 10px; /* Espacio interior */
+    border: none; /* Sin borde */
+    border-radius: 25px; /* Bordes redondeados */
+    text-align: center; /* Alineación del texto */
+    font-weight: bold; /* Texto en negrita */
+}
+
+.show {
+    width: 98.5%; /* Ancho del contenedor de resultados */
+    height: 40px; /* Altura del contenedor */
+    font-size: 24px; /* Tamaño del texto */
+    padding: 10px; /* Espacio interior */
+    border-radius: 25px; /* Bordes redondeados */
+    background-color: #ffffff; /* Color de fondo blanco */
+    margin-bottom: 25px; /* Margen inferior */
+}
+
+#display {
+    width: 98.5%; /* Ancho del campo de resultados */
+    font-size: 36px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    text-align: center; /* Alineación centrada */
+    border: none; /* Sin borde */
+    border-radius: 25px; /* Bordes redondeados */
+    margin-bottom: 25px; /* Margen inferior */
+}
+
+.op {
+    display: flex; /* Usa flexbox para organizar los botones */
+    justify-content: space-between; /* Coloca los botones con espacio entre ellos */
+    gap: 10px; /* Espacio entre los botones */
+    margin-bottom: 25px; /* Margen inferior */
+}
+
+button {
+    width: 20%; /* Ancho del botón */
+    height: 40px; /* Altura del botón */
+    font-size: 24px; /* Tamaño del texto del botón */
+    background-color: #e4f1c5; /* Color de fondo */
+    color: #000000; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 25px; /* Bordes redondeados */
+}
+
+button:hover {
+    background-color: #bfecb1; /* Cambia el color de fondo cuando se pasa el ratón */
+}

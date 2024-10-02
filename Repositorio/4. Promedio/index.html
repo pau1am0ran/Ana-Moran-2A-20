@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Enlace al archivo CSS para los estilos -->
+
+    <title>Promedio</title>
+    <!-- Título de la página -->
+</head>
+
+<body>
+    <div class="all">
+    <!-- Contenedor principal que agrupa toda la calculadora -->
+
+    <h1>Calcula tu 35%</h1>
+    <!-- Encabezado principal de la página -->
+
+    <div class="act1">
+        <p>Ingrese la nota obtenida en la actividad 1</p>
+        <!-- Texto que solicita la nota de la actividad 1 -->
+        <input type="number" id="act1">
+        <!-- Campo de entrada para la nota de la actividad 1 -->
+    </div>
+
+    <div class="act2">
+        <p>Ingrese la nota obtenida en la actividad 2</p>
+        <!-- Texto que solicita la nota de la actividad 2 -->
+        <input type="number" id="act2">
+        <!-- Campo de entrada para la nota de la actividad 2 -->
+    </div>
+
+    <div class="act3">
+        <p>Ingrese la nota obtenida en la actividad 3</p>
+        <!-- Texto que solicita la nota de la actividad 3 -->
+        <input type="number" id="act3">
+        <!-- Campo de entrada para la nota de la actividad 3 -->
+    </div>
+
+    <div class="result">
+        <button onclick="calcular()">Calcular</button>
+        <!-- Botón que ejecuta la función 'calcular' cuando se hace clic -->
+        <input type="text" id="display" disabled>
+        <!-- Campo de entrada deshabilitado donde se muestra el resultado -->
+    </div>
+    </div>
+
+    <script src="scripts.js"></script>
+    <!-- Enlace al archivo JavaScript para la funcionalidad -->
+</body>
+</html>

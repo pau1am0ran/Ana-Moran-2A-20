@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo de estilos CSS externo. -->
+</head>
+<body>
+    <input type="number" id="seconds"> <!-- Campo de entrada para ingresar la cantidad de segundos. -->
+    <button onclick="conteo()">Inicio</button> <!-- Botón que inicia el conteo regresivo al hacer clic. -->
+    <button onclick="reincio()">Reinicio</button> <!-- Botón que reinicia la página (recarga). -->
+    <h2 id="salida" class="alerta-activa">Apagado</h2> <!-- Texto que indica el estado del temporizador (por defecto "Apagado"). -->
+    <audio id="alarm"> <!-- Etiqueta para reproducir audio cuando se active la alarma. -->
+        <source src="alarm.mp3" type="audio/mpeg"> <!-- Fuente del archivo de audio en formato MP3. -->
+        Reproduciendo audio de alarma. <!-- Texto que aparece si el audio no puede ser reproducido. -->
+    </audio>
+
+    <script src="script.js"></script> <!-- Enlace al archivo JavaScript externo para manejar la lógica. -->
+</body>
+</html>

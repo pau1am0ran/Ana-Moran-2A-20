@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <!-- Enlace al archivo CSS externo para aplicar estilos -->
+</head>
+
+<body>
+    <label> Ingrese el número máximo:</label>
+    <!-- Etiqueta para describir el campo de entrada del número máximo -->
+
+    <input type="number" id="max" min="1"> 
+    <!-- Campo de entrada para que el usuario ingrese el número máximo, con un valor mínimo de 1 -->
+
+    <br>
+    <!-- Salto de línea para separar los elementos visualmente -->
+
+    <label>Ingrese el número mínimo: </label>
+    <!-- Etiqueta para describir el campo de entrada del número mínimo -->
+
+    <input type="number" id="min" min="1"> 
+    <!-- Campo de entrada para que el usuario ingrese el número mínimo, con un valor mínimo de 1 -->
+
+    <br> 
+    <!-- Otro salto de línea -->
+
+    <button onclick="dice()">¡Suerte!</button> 
+    <!-- Botón que ejecuta la función 'dice()' cuando se hace clic -->
+
+    <h2 id="salida"></h2> 
+    <!-- Título de nivel 2 donde se mostrará el resultado generado por la función JavaScript -->
+
+    <script src="script.js"></script> 
+    <!-- Enlace al archivo JavaScript que contiene la lógica de la función 'dice()' -->
+</body>
+</html>

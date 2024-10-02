@@ -1,0 +1,67 @@
+/* Importamos la fuente Poppins desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif; /* Aplica la fuente Poppins a todo el cuerpo del documento. */
+    display: flex; /* Utiliza flexbox para alinear los elementos. */
+    flex-direction: column; /* Alinea los elementos en una columna. */
+    justify-content: center; /* Centra los elementos verticalmente en la página. */
+    align-items: center; /* Centra los elementos horizontalmente. */
+    min-height: 100vh; /* El cuerpo tendrá al menos la altura de la ventana del navegador. */
+    background-color: #4d0000; /* Color de fondo oscuro (rojo intenso). */
+    margin: 0; /* Elimina márgenes por defecto. */
+}
+
+/* Estilos para input, botones y el texto de salida (iguales en ancho y alto) */
+input[type="number"], button, #salida {
+    width: 300px; /* Ancho uniforme para el input, botones y texto. */
+    height: 50px; /* Alto uniforme para todos los elementos. */
+    font-size: 18px; /* Tamaño de fuente moderado. */
+    text-align: center; /* Alineación centrada del texto dentro de los elementos. */
+    margin: 10px 0; /* Espacio entre los elementos. */
+    border-radius: 10px; /* Bordes redondeados para todos los elementos. */
+    outline: none; /* Elimina el borde al hacer clic en los elementos. */
+}
+
+/* Estilos específicos para el input de número */
+input[type="number"] {
+    border: 2px solid #ff4d4d; /* Borde rojo para el input. */
+    background-color: #ffffff; /* Fondo blanco. */
+    color: #333; /* Color de texto gris oscuro. */
+    padding: 10px; /* Espaciado interno para comodidad visual. */
+}
+
+/* Estilos para los botones */
+button {
+    background-color: #ff4d4d; /* Fondo rojo para los botones. */
+    color: white; /* Texto blanco en los botones. */
+    border: none; /* Sin borde en los botones. */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa por encima del botón. */
+    transition: background-color 0.3s ease; /* Efecto suave cuando cambia el color de fondo. */
+}
+
+/* Efecto de hover en los botones */
+button:hover {
+    background-color: #ff1a1a; /* Cambia el fondo a un rojo más claro cuando el ratón pasa por encima. */
+}
+
+/* Estilos para el texto de salida */
+#salida {
+    font-size: 24px; /* Texto más grande para el estado del temporizador. */
+    font-weight: bold; /* Texto en negrita. */
+    color: #ff4d4d; /* Color rojo para el texto de salida. */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas. */
+    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.4); /* Sombra sutil para el texto. */
+}
+
+/* Animación de parpadeo */
+@keyframes alerta {
+    0% { color: #ff4d4d; } /* Color inicial (rojo). */
+    50% { color: #ffffff; } /* Color de transición (blanco). */
+    100% { color: #ff4d4d; } /* Color final (rojo). */
+}
+
+/* Clase para activar el parpadeo del texto */
+.alerta-activa {
+    animation: alerta 1s infinite; /* Activa la animación de parpadeo indefinidamente. */
+}

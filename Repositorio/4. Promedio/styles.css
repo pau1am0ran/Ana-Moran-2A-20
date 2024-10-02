@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+/* Importa la fuente Poppins desde Google Fonts */
+
+body {
+    font-family: 'Poppins';
+    /* Aplica la fuente Poppins a todo el cuerpo de la página */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Centra el contenido horizontal y verticalmente */
+
+    min-height: 100vh;
+    /* Hace que el cuerpo tenga al menos la altura total de la ventana del navegador */
+
+    background-color: #e8c2b2;
+    /* Color de fondo para la página */
+}
+
+.all {
+    width: 500px;
+    padding: 35px;
+    background-color: #dd6e42;
+    border-radius: 25px;
+    align-items: center;
+    /* Estilos generales para el contenedor principal */
+}
+
+#act1, #act2, #act3 {
+    width: 98.5%;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    /* Estilos compartidos para los campos de entrada de las notas */
+}
+
+#display {
+    width: 98.5%;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    color: #000000;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    /* Estilos para el campo donde se muestra el promedio */
+}
+
+button {
+    width: 50%;
+    height: 40px;
+    font-size: 20px;
+    background-color: #cf4812;
+    color: #000000;
+    border: none;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    /* Estilos para el botón de calcular */
+}
